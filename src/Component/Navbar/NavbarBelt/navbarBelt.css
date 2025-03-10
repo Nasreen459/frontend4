@@ -1,0 +1,234 @@
+/* Global Fix for Scroll Issue */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbarBelt {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    width: 100%;
+    height: 60px;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+/* Left Side */
+.leftNavBelt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftNavBeltLogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.amazonLogoNavbar {
+    width: 100px;
+    height: auto;
+}
+
+.navbar_inLogo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Location Section */
+.navbarBeltLocation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbarBeltLocationPlace {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarBeltLocationTop {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.navbarBeltLocationBottom {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.navbarBeltSearchBox {
+    flex-grow: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarBeltSearchDiv {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.navbarBeltSearchBoxAll {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.navbarBeltInputSearchBox {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Search Button */
+.searchIconNavbarBelt {
+    background-color: #febd69;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.searchIconNavbarBelt:hover {
+    background-color: #f1ba73;
+}
+
+/* Right Side */
+.rightSideNavbarBelt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Flag & Language */
+.indianFlagCode {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.indiaFlag {
+    width: 20px;
+    height: 20px;
+}
+
+.indiaCodeNavbarBelt {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Account & Orders */
+.helloSignInNavbarBelt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.helloTopNavbarBelt {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Cart */
+.cartTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cartItemNumberNavbarBelt {
+    position: absolute;
+    top: 5px;
+    left: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #febd69;
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 1024px) {
+    .navbarBelt {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbarBeltSearchBox {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .rightSideNavbarBelt {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .helloSignInNavbarBelt {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbarBelt {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .leftNavBelt,
+    .rightSideNavbarBelt {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbarBeltSearchBox {
+        width: 90%;
+    }
+}
+
+
+
+.helloSignInNavbarBelt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cartItemNumberNavbarBelt {
+    position: absolute;
+    top: -5px; /* Adjusts the number slightly above the icon */
+    right: 8px; /* Ensures it stays within the cart icon */
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,97 @@
+.homeDetails{
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(238, 235, 235);
+}
+
+.homeDetaiLsongCard{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: white;
+}
+
+.homeDetaiLsongCardTitle{
+    font-size: 21px;
+    font-weight: 600px;
+}
+
+.homeDetaiLsongCardItems{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    overflow: hidden;
+
+}
+
+    .scrollDIV{
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    /* .scrollDIV::-webkit-scrollbar{
+        width: 8px;
+        min-height: 8px;
+    } */
+
+
+        .homeDetaiLsongCardItem{
+            display: flex;
+            flex-shrink: 0;
+            cursor: pointer;
+            flex-direction: column;
+            width: 17%;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: rgb(247,247,247);
+        }
+
+
+
+        .homeDetaiLsongCardItemImg{
+            width: 60%;
+        }
+
+        .homeDetaiLsongCardItemImgDetail{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .homeDetaiLsongCardItemImgTopDetail{
+            display: flex;
+            gap: 5px;
+        }
+
+        .homeDetailPercenttageOff{
+            padding: 4px 6px;
+            background-color: #cc0c39;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2px;
+            border-radius: 2px;
+            color: white;
+        }
+
+
+        .limitedItemDealhomeDetail{
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .bottomHomeDetail{
+            font-size: 12px;
+            padding: 2px 0;
+        }
